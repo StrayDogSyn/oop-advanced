@@ -1,0 +1,24 @@
+@startuml
+abstract class Product {
+  +name: str
+  +price: float
+  +apply_discount(percent: float): void
+}
+class Book { -author: str\n -isbn: str }
+class Clothing { -size: str }
+class Electronics { -warranty_years: int }
+Product <|-- Book
+Product <|-- Clothing
+Product <|-- Electronics
+abstract class Payment {
+  +process_payment(amount: float): bool
+}
+class CreditCardPayment { -last4: str }
+class PayPalPayment { -email: str }
+Payment <|-- CreditCardPayment
+Payment <|-- PayPalPayment
+class ShoppingCart {
+  +add(product, qty: int): void
+  +total(): float
+}
+@enduml

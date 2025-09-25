@@ -1,0 +1,13 @@
+@startuml
+class Shape {
+  +area(): float
+  +perimeter(): float
+  +describe(): str
+}
+class Circle { -radius: float }
+class Rectangle { -width: float\n -height: float }
+class Triangle { -base: float\n -height: float }
+Shape <|-- Circle
+Shape <|-- Rectangle
+Shape <|-- Triangle
+@enduml

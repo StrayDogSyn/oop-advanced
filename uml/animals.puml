@@ -1,0 +1,10 @@
+@startuml
+class Animal {
+  +name: str
+  +speak(): str
+}
+class Dog
+class Cat
+Animal <|-- Dog
+Animal <|-- Cat
+@enduml
