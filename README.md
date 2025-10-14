@@ -4,6 +4,7 @@ This repository accompanies the OOP Advanced lesson (Inheritance, Polymorphism, 
 It contains runnable examples, scaffolded exercises, tests, and UML stubs aligned to the lesson plan.
 
 ## 🚀 Quick Setup
+
 ```bash
 py -m venv venv
 source venv/Scripts/activate      # Windows Git Bash
@@ -12,4 +13,3 @@ source venv/Scripts/activate      # Windows Git Bash
 pip install -r requirements.txt
 python -m pytest -q
 ```
-# oop-advanced

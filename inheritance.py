@@ -247,6 +247,7 @@ class Cat(Animal):
             return f"{self.name} purrs softly while sleeping!"
         
         self.is_purring = True
+        # cSpell:ignore Purrrrr
         return f"{self.name} purrs contentedly: Purrrrr..."
     
     def climb_tree(self) -> str:
@@ -384,6 +385,7 @@ def demonstrate_inheritance():
     print("Creating animals...")
     buddy = Dog("Buddy", 3, "Golden Retriever")
     whiskers = Cat("Whiskers", 2, "Orange")
+    # cSpell:ignore tweety Tweety
     tweety = Bird("Tweety", 1, 8.5)
     
     print(f"Created: {buddy}")
